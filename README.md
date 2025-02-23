@@ -14,6 +14,7 @@ To build your own safe dataset using PubChem data:
 2. Run the script:
    ```bash
    python fetch_data.py
+   ```
 
 We also provide a preprocessed version of the Keller dataset (`Odor_338.xlsx`) in the `pubchem` directory. The original dataset can be found [here](https://raw.githubusercontent.com/dream-olfaction/olfaction-prediction/refs/heads/master/data/TrainSet.txt).
 
@@ -42,7 +43,7 @@ Adjust these values to suit your requirements for model performance and computat
 After training with the default settings, the model weights and configuration files will be saved in the `exp_5` directory. To make predictions, run:
 
 ```python
-python test.py
+python predict.py
 ```
 
 If you want to skip the training process, you can download the pre-trained model weights from [Google Drive](https://drive.google.com/drive/folders/1YJDtkLac0tCd6-9R4J4__TaETXk0xLKr?usp=drive_link). Save the downloaded files in the `exp_5` directory before running `test.py`.
